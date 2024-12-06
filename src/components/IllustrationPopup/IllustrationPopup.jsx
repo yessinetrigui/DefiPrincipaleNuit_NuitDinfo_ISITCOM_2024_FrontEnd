@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import QuizList from '../../components/QuizList/QuizList';
 
 const IllustrationPopup = ({ videoSrc, description }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isQuizVisible, setIsQuizVisible] = useState(false);
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleQuiz = () => {
+    setIsQuizVisible(true); // Show the quiz
+    setIsOpen(false); // Hide the popup
   };
 
   return (
@@ -21,7 +28,7 @@ const IllustrationPopup = ({ videoSrc, description }) => {
       {/* Popup */}
       {isOpen && (
         <motion.div
-          className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50"
+          className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50 backdrop-blur-md"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -53,9 +60,24 @@ const IllustrationPopup = ({ videoSrc, description }) => {
             </div>
 
             {/* Description */}
-            <p className="text-gray-800 text-center font-medium">{description}</p>
+            <p className="text-gray-800 text-center font-medium mb-4">{description}</p>
+
+            {/* Show Quiz Button */}
+            <button
+              onClick={toggleQuiz}
+              className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors w-full"
+            >
+              Start Quiz
+            </button>
           </motion.div>
         </motion.div>
+      )}
+
+      {/* Quiz Section */}
+      {isQuizVisible && (
+        <div className="w-full max-w-4xl mx-auto mt-6">
+          <QuizList />
+        </div>
       )}
     </div>
   );
