@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import QuizList from '../../components/QuizList/QuizList';
 
-const IllustrationPopup = ({ videoSrc, description }) => {
+const IllustrationPopup = ({ description }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isQuizVisible, setIsQuizVisible] = useState(false);
+  const [videoSrc, setVideoSrc] = useState('');
+
+  useEffect(() => {
+    // Randomize video source when the component mounts
+    const videos = ['me3da.webm', 'rweri.webm'];
+    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+    setVideoSrc(randomVideo);
+  }, []);
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
@@ -16,14 +24,20 @@ const IllustrationPopup = ({ videoSrc, description }) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div
+      className={`flex items-center justify-center min-h-screen bg-gray-100 ${
+        isQuizVisible ? 'flex-col' : 'flex-row'
+      } transition-all duration-300`}
+    >
       {/* Button to open the popup */}
-      <button
-        className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors"
-        onClick={togglePopup}
-      >
-        Show Illustration
-      </button>
+      {!isQuizVisible && (
+        <button
+          className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors"
+          onClick={togglePopup}
+        >
+          Show Illustration
+        </button>
+      )}
 
       {/* Popup */}
       {isOpen && (
@@ -67,7 +81,7 @@ const IllustrationPopup = ({ videoSrc, description }) => {
               onClick={toggleQuiz}
               className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors w-full"
             >
-              Start Quiz
+              Commencer Quizz
             </button>
           </motion.div>
         </motion.div>
