@@ -11,7 +11,7 @@ import QuizCreate from './pages/Admin/pages/Quiz/QuizCreate';
 import QuizEdit from './pages/Admin/pages/Quiz/QuizEdit';
 import QuizDetails from './pages/Admin/pages/Quiz/QuizDetails';
 import { BrowserRouter, Route ,Routes } from 'react-router-dom';
-import Client from './client';
+import Client from './Client';
 import Auth from './pages/Admin/Auth';
 
 
