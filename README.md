@@ -25,9 +25,12 @@ Ce projet est développé en **ReactJS** et stylisé avec **Tailwind CSS**.
 
 Ajoutez ici une capture d'écran de votre projet pour montrer l'horreur du design :  
 👇👇👇  
-![BadUi Preview](https://via.placeholder.com/800x400)  
+ 
 ![1](https://github.com/user-attachments/assets/64747324-aff2-4d22-96f3-6adf37f6eb09)
+![3](https://github.com/user-attachments/assets/33b1356b-d290-4b6a-ac47-8b09d6439019)
 ![2](https://github.com/user-attachments/assets/ee93da33-7a66-4c3d-96b9-499d1ece93f2)
+![4](https://github.com/user-attachments/assets/b0d4f759-4d6d-4768-b53d-2935ad9c2c67)
+![5](https://github.com/user-attachments/assets/5dfac128-a903-430b-b87a-8d6cde1c2aef)
 
 ---
 
