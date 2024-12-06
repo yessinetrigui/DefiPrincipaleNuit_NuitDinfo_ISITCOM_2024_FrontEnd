@@ -1,0 +1,85 @@
+{
+    "quiz": [
+      {
+        "question": "What is the most common cause of food poisoning?",
+        "options": [
+          "Consuming food contaminated with bacteria or viruses",
+          "Eating meals high in fat",
+          "Drinking water immediately after eating",
+          "Not washing hands after eating"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "question": "What is the first sign of food poisoning?",
+        "options": [
+          "Severe headache",
+          "Stomach pain or diarrhea",
+          "Skin itching",
+          "Shortness of breath"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "question": "Which of the following is an effective way to prevent food poisoning?",
+        "options": [
+          "Eating food immediately after cooking",
+          "Washing fruits and vegetables thoroughly before eating",
+          "Storing food at the proper temperature",
+          "All of the above"
+        ],
+        "correctAnswer": 4
+      },
+      {
+        "question": "Which chemical is considered dangerous if swallowed by children?",
+        "options": [
+          "Household cleaners",
+          "Over-the-counter medications",
+          "Bleaching agents (chlorine)",
+          "All of the above"
+        ],
+        "correctAnswer": 4
+      },
+      {
+        "question": "What is the first action to take if food poisoning is suspected?",
+        "options": [
+          "Give the victim a large amount of water",
+          "Call emergency services or contact a poison control center",
+          "Make the victim vomit",
+          "Ignore the situation and wait to see how the symptoms develop"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "question": "What is the correct way to store meat and poultry?",
+        "options": [
+          "Leave them at room temperature",
+          "Refrigerate or freeze them immediately after purchase",
+          "Cover them with a cloth",
+          "Store them with vegetables on the same shelf"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "question": "What symptoms may indicate chemical poisoning?",
+        "options": [
+          "Burning sensation in the throat or mouth",
+          "Nausea and vomiting",
+          "Difficulty breathing or loss of consciousness",
+          "All of the above"
+        ],
+        "correctAnswer": 4
+      },
+      {
+        "question": "Which groups are most at risk for food poisoning?",
+        "options": [
+          "Young children",
+          "Elderly people",
+          "Pregnant women",
+          "All of the above"
+        ],
+        "correctAnswer": 4
+      }
+    ]
+  }
+  
