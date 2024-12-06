@@ -9,7 +9,7 @@ const Home = () => {
       <Navbar fluid rounded>
         <Navbar.Brand href="">
           <span className="self-center whitespace-nowrap text-xl font-semibold text-blue-800">
-            WeMakeConscience
+            Conscience
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">
@@ -17,22 +17,21 @@ const Home = () => {
         </div>
         <Navbar.Collapse>
           <Navbar.Link href="#" active>
-            Home
+            Accueil
           </Navbar.Link>
-          <Navbar.Link href="#">About</Navbar.Link>
+          <Navbar.Link href="#">À propos</Navbar.Link>
           <Navbar.Link href="#">Contact</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
 
-      {/* Welcome Component */}
+      {/* Composant Welcome */}
       <Welcome />
 
       {/* Illustration Popup */}
       <IllustrationPopup
-        videoSrc="/me3da.webm" // Accessing the video from the public folder
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem ipsum, mollitia sint omnis illo eaque aliquam necessitatibus. Non nostrum eaque ut illum. Dolore, animi! Reiciendis nam eum voluptas necessitatibus."
+        videoSrc="/me3da.webm" // Vidéo située dans le dossier public
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit autem ipsum, mollitia sint omnis illo eaque aliquam necessitatibus. Non nostrum eaque ut illum. Dolore, animi! Reiciendis nam eum voluptas necessitatibus."
       />
-    
     </div>
   );
 };
